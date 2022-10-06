@@ -21,6 +21,15 @@ public class FachadaLote {
 	public List<Lote> listaLotes(){
 		return this.servico.listaLotes();
 	}
-}
+	
+	public void lerLote() {
+		servicos.lerLote();
+	}
+	
+	public void criarLote(int qtd, String data, String nome) {
+		servicos.criarLote(qtd, data, nome);
+	}
 
 }
+
+

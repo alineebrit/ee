@@ -1,23 +1,34 @@
 package Main;
+import Class.Produto;
+import Class.Lote;
+import Fachadas.FachadaProduto;
+import Fachadas.FachadaLote;
 
-import java.util.Scanner;
 
 public class Main {
+	
  public static void main(String[]args) {
-	 Scanner scanner = new Scanner(System.in);
 	 FachadaProduto fp = new fachadaProduto();
-	 String nome = scanner.nextLine();
-	 String fabricante = scanner.nextLine();
-	 Double peso = scanner.nextDouble();
+	 FachadaLote fl = new fachadaProduto();
 	 
  }
  
- adicionaProduto(pf, nome,fabricante, peso);
- System.out.print();
+ Produto arroz = fp.criarProduto("Arroz Parbolizado", "Urbano", 5.50);
+ Produto macarrao = fp.criarProduto("Macarrão Fino", "Imperador", 2.89);
+ 	for (Produto prod: fp.listarProdutos())
+	 System.out.println(prod.toString());
+ 	System.out.println();
+ 	
+	}
  
- public static void adicionaProduto(FachadaProduto fp,String nome, String fabricante,double peso ) {
- 	fp.adicionaproduto(nome, fabricante, peso);
- 	}
- 
+fl = fl.criarLote(1000, "25/05/2026", "Arroz Parbolizado");
+Produto macarrao = fp.criarProduto(1500, "26/06/2025", "Macarrão Fino");
+	for (Lote l: fl.listarProdutos())
+	 System.out.println(l.toString());
+	System.out.println();
+	
+	}
+
 }
- 
+
+
