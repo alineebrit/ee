@@ -1,12 +1,14 @@
 package Repositorios;
 
+import java.util.ArrayList;
+import java.util.List;
 import Class.Produto;
 
 public class RepositorioLote {
 
 	List<Produto>lista = new ArrayList<>();
 
-	public List<Produto> lerLote() {
+	public List<Produto>lerLote() {
 		return lista;
 	}
 
@@ -14,8 +16,8 @@ public class RepositorioLote {
 		
 	}
 	
-	public List<Produtos> cadastrandoProdutos(){
-		lista.put(prod.getNome(), prod);
+	public void cadastrandoProdutos(Produto prod){
+		lista.add(prod);
 		
 	}
 	

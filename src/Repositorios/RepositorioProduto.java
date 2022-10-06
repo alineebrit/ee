@@ -1,5 +1,7 @@
 package Repositorios;
+import java.util.ArrayList;
 import java.util.List;
+import Class.Produto;
 
 import Class.Produto;
 
@@ -16,15 +18,13 @@ List<Produto>lista = new ArrayList<>();
 		
 	}
 	
-	public void removerProdutos() {
+	public void removerProdutos(Produtos prod) {
 		lista.remove(prod);
 	}
 	
-	public List<Produtos>cadastrandoProdutos(){
-		List.put(prod.getNome(), prod);
+	public void cadastrandoProdutos(Produtos prod){
+		lista.add(prod);
 		
 	}
 	
-
-	}
 }

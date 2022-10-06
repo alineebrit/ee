@@ -1,7 +1,4 @@
 package Fachadas;
-import java.util.List;
-
-import Class.Lote;
 import Class.Produto;
 import Servicos.LoteServico;
 
@@ -15,7 +12,7 @@ public class FachadaLote {
 	}
 	
 	public void adicionaLote(int qtd, String dataV, Produto prod) {
-		this.servico.adicionaLote( qtd, dataV,  prod);
+		this.servico.criarLote( qtd, dataV,  prod);
 	}
 	
 	public List<Lote> listaLotes(){

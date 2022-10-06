@@ -15,8 +15,8 @@ public class LoteServico {
 	}
 	
 	public void criarLote(int qtd, String data, String nome) {
-		Produto prod = new Produto(qtd, data, nome);
-		rl.criarProdutos();
+		Lote l = new Lote(qtd, data, nome);
+		rl.criarLote();
 	}
 	
 	
