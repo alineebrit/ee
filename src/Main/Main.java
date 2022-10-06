@@ -6,13 +6,13 @@ import Fachadas.FachadaLote;
 public class Main {
 	
  public static void main(String[]args) {
-	 FachadaProduto fp = new fachadaProduto();
-	 FachadaLote fl = new fachadaProduto();
+	 FachadaProduto fp = new FachadaProduto();
+	 FachadaLote fl = new FachadaLote();
 	 
 	 fp.adicionaProduto("Arroz Parbolizado", "Urbano", 5.50);
-	 fp.adicionaProduto("Macarrão Fino", "Imperador", 2.89);
+	 fp.adicionaProduto("Macarrï¿½o Fino", "Imperador", 2.89);
 	 fl.criarLote(1000, "25/05/2026", "Arroz Parbolizado");
-	 fp.adicionaLote(1500, "26/06/2025", "Macarrão Fino");
+	 fp.adicionaLote(1500, "26/06/2025", "Macarrï¿½o Fino");
 
  }
 }

@@ -1,6 +1,5 @@
 package Class;
 
-import java.util.Date;
 
 public class Lote {
     private int qtd;

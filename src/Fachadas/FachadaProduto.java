@@ -1,4 +1,6 @@
 package Fachadas;
+import java.util.List;
+
 import Servicos.ProdutoServico;
 
 
@@ -11,12 +13,13 @@ public class FachadaProduto {
 		}
 		
 		public void adicionaProduto(String nome, String fabricante, double peso) {
-			this.servico.criarProduto(nome, fabricante, peso);
+			this.servico.criarProdutos(nome, fabricante, peso);
 		}
 	
-		public void listaProdutos(){
-			servico.lerProdutos();
+		public List<Produto> lista(){
+			return this.servico.lista();
 		}
+
 	
 	}
 

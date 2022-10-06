@@ -2,22 +2,22 @@ package Repositorios;
 
 import java.util.ArrayList;
 import java.util.List;
-import Class.Produto;
+import Class.Lote;
 
 public class RepositorioLote {
 
-	List<Produto>lista = new ArrayList<>();
+	List<Lote>listalote = new ArrayList<>();
 
-	public List<Produto>lerLote() {
-		return lista;
+	public List<Lote>lerLote() {
+		return listalote;
 	}
 
 	public void criarLote() {
 		
 	}
 	
-	public void cadastrandoProdutos(Produto prod){
-		lista.add(prod);
+	public void cadastrandoLote(Lote l){
+		listalote.add(l);
 		
 	}
 	

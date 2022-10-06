@@ -1,30 +1,27 @@
 package Fachadas;
-import Class.Produto;
+import java.util.List;
+import Class.Lote;
 import Servicos.LoteServico;
 
 
 public class FachadaLote {
 
-	LoteServico servico;
+	LoteServico sl= new LoteServico();
 
 	public FachadaLote() {
-		this.servico = new LoteServico();
+		this.sl = new LoteServico();
 	}
 	
-	public void adicionaLote(int qtd, String dataV, Produto prod) {
-		this.servico.criarLote( qtd, dataV,  prod);
+	public void adicionaLote(int qtd, String dataV, String nome) {
+		this.sl.cadastrandoLote( qtd, dataV, nome);
 	}
 	
 	public List<Lote> listaLotes(){
-		return this.servico.listaLotes();
-	}
-	
-	public void lerLote() {
-		servicos.lerLote();
+		return this.sl.listaLotes();
 	}
 	
 	public void criarLote(int qtd, String data, String nome) {
-		servicos.criarLote(qtd, data, nome);
+		sl.cadastrandoLote(qtd, data, nome);
 	}
 
 }

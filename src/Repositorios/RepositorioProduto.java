@@ -3,9 +3,6 @@ import java.util.ArrayList;
 import java.util.List;
 import Class.Produto;
 
-import Class.Produto;
-
-
 public class RepositorioProduto {
 
 List<Produto>lista = new ArrayList<>();
@@ -18,11 +15,7 @@ List<Produto>lista = new ArrayList<>();
 		
 	}
 	
-	public void removerProdutos(Produtos prod) {
-		lista.remove(prod);
-	}
-	
-	public void cadastrandoProdutos(Produtos prod){
+	public void cadastrandoProdutos(Produto prod){
 		lista.add(prod);
 		
 	}
