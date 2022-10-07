@@ -8,7 +8,7 @@ public class RepositorioLote {
 
 	List<Lote>listalote = new ArrayList<>();
 
-	public List<Lote>lerLote() {
+	public List<Lote>listaLote() {
 		return listalote;
 	}
 
@@ -16,7 +16,7 @@ public class RepositorioLote {
 		
 	}
 	
-	public void cadastrandoLote(Lote l){
+	public void adicionaLote(Lote l){
 		listalote.add(l);
 		
 	}

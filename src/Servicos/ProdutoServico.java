@@ -6,9 +6,9 @@ import Repositorios.RepositorioProduto;
 public class ProdutoServico {
 	RepositorioProduto rp = new RepositorioProduto();
 	
-	public void criarProdutos(String nome, String fabricante, double preco) {
+	public void adicionaProdutos(String nome, String fabricante, double preco) {
 		Produto prod = new Produto(nome, fabricante, preco);
-		rp.cadastrandoProdutos(prod);
+		rp.adicionaProdutos(prod);
 	}
 	
 	public List<Produto> lista() {

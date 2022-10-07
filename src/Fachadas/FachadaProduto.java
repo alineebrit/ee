@@ -13,8 +13,8 @@ public class FachadaProduto {
 			this.servico = new ProdutoServico();
 		}
 		
-		public void adicionaProduto(String nome, String fabricante, double peso) {
-			this.servico.criarProdutos(nome, fabricante, peso);
+		public void adicionaProduto(String nome, String fabricante, double preco) {
+			this.servico.adicionaProdutos(nome, fabricante, preco);
 		}
 	
 		public List<Produto> lista(){

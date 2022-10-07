@@ -7,15 +7,11 @@ public class RepositorioProduto {
 
 List<Produto>lista = new ArrayList<>();
 
-	public List<Produto> lerProdutos() {
+	public List<Produto> listaProdutos() {
 		return lista;
 	}
-
-	public void criarProdutos() {
-		
-	}
 	
-	public void cadastrandoProdutos(Produto prod){
+	public void adicionaProdutos(Produto prod){
 		lista.add(prod);
 		
 	}

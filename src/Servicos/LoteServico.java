@@ -7,9 +7,9 @@ import Repositorios.RepositorioLote;
 public class LoteServico {
 	RepositorioLote rl = new RepositorioLote();
 
-	public void cadastrandoLote(int qtd, String data, Produto prod) {
+	public void adicionaLote(int qtd, String data, Produto prod) {
 		Lote l = new Lote(qtd, data, prod);
-		rl.cadastrandoLote(l);
+		rl.adicionaLote(l);
 	}
 
     public List<Lote> listaLotes() {
