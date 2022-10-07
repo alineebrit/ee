@@ -1,5 +1,6 @@
 package Fachadas;
 import java.util.List;
+import Class.Produto;
 
 import Servicos.ProdutoServico;
 
